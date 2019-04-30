@@ -1,0 +1,15 @@
+if TARGET_FV2DEVA
+
+config SYS_BOARD
+	default "fv2deva"
+
+config SYS_VENDOR
+	default "viavi"
+
+config SYS_CONFIG_NAME
+	default "fv2deva"
+
+config SYS_TEXT_BASE
+    default 0x17800000
+
+endif

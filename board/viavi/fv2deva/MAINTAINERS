@@ -1,0 +1,12 @@
+FV2DEVA BOARD
+M:	Zeppi Lin <zeppi@jangbogo.ar>
+S:	Maintained
+F:	board/viavi/fv2deva/*
+F:	include/configs/fv2deva.h
+F:	configs/fv2qdeva_defconfig
+F:	configs/fv2dldeva_defconfig
+F:	configs/fv2dldeva_defconfig
+F:	arch/arm/dts/fv2q-dev-a.dts
+F:	arch/arm/dts/fv2dl-dev-a.dts
+F:      arch/arm/mach-imx/mx6/Kconfig 
+
