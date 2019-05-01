@@ -129,6 +129,14 @@ config TARGET_MX6SABRESD
     select BOARD_EARLY_INIT_F
     select NXP_BOARD_REVISION
 
+config TARGET_FV2DEVA
+    bool
+    select BOARD_LATE_INIT
+    select DM
+    select DM_THERMAL
+    select BOARD_EARLY_INIT_F
+    select NXP_BOARD_REVISION
+
 config TARGET_MX6QDLARM2
     bool
     select BOARD_LATE_INIT
@@ -210,6 +218,16 @@ config TARGET_DISPLAY5
 config TARGET_EMBESTMX6BOARDS
 	bool "embestmx6boards"
 	select BOARD_LATE_INIT
+
+config TARGET_FV2QDEVA
+    bool "Fit V2 Quad Dev Board"
+    select TARGET_FV2DEVA
+    select MX6Q
+
+config TARGET_FV2DLDEVA
+    bool "Fit V2 DualLite Dev Board"
+    select TARGET_FV2DEVA
+    select MX6DL
 
 config TARGET_GE_B450V3
 	bool "General Electric B450v3"
@@ -670,6 +688,7 @@ source "board/toradex/apalis_imx6/Kconfig"
 source "board/toradex/colibri_imx6/Kconfig"
 source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
+source "board/viavi/fv2deva/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
 
