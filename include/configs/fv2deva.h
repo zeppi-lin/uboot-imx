@@ -27,7 +27,8 @@
 #define PHYS_SDRAM_SIZE		(512u * 1024 * 1024)
 #endif
 
-#include "mx6sabre_common.h"
+#include "fv2deva_common.h"
+/* #include "mx6sabre_common.h" */
 
 /* Falcon Mode */
 #define CONFIG_SPL_FS_LOAD_ARGS_NAME	"args"
